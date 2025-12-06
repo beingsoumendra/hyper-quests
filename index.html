@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hyper Quests – Waitlist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <div class="badge">🚀 Launching Soon</div>
+
+      <h1>Hyper Quests</h1>
+      <p class="tagline">
+        Daily crypto & web3 quests. Learn, play, and earn rewards.
+      </p>
+
+      <p class="subtext">
+        Drop your email to join the early waitlist and get first access.
+      </p>
+
+      <!-- ✅ Waitlist form (uses FormSubmit to send emails to you) -->
+      <!-- STEP: Replace YOUR-EMAIL-HERE with your real email address -->
+      <form 
+        class="waitlist-form" 
+        action="https://formsubmit.co/YOUR-EMAIL-HERE" 
+        method="POST"
+      >
+        <!-- Disable FormSubmit captcha (optional) -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Subject line of email you receive -->
+        <input type="hidden" name="_subject" value="New Hyper Quests waitlist signup">
+
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="Enter your email address" 
+          required
+        />
+
+        <button type="submit">Join the Waitlist</button>
+      </form>
+
+      <p class="hint">
+        You’ll get an email notification when Hyper Quests goes live.
+      </p>
+
+      <div class="divider">
+        <span></span>
+        <p>or</p>
+        <span></span>
+      </div>
+
+      <!-- ✅ X (Twitter) button -->
+      <!-- If your X handle is different, just edit this link -->
+      <a 
+        href="https://x.com/hyperquests" 
+        class="x-btn" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        Follow @hyperquests on X
+      </a>
+
+      <p class="footer">
+        Built by <span>beingsoumendra</span>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
