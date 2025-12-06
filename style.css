@@ -1,0 +1,228 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* LIGHTNING BACKGROUND FOR MAIN PAGE */
+.bg-lightning {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f9fafb;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(56, 189, 248, 0.25) 0, transparent 55%),
+    radial-gradient(circle at 90% 0%, rgba(129, 140, 248, 0.35) 0, transparent 55%),
+    radial-gradient(circle at 50% 100%, rgba(34, 197, 94, 0.3) 0, transparent 60%),
+    #020617;
+  background-attachment: fixed;
+  animation: lightningPulse 3.5s infinite alternate;
+}
+
+/* DARK SOLID BACKGROUND FOR ADMIN PAGE */
+.bg-dark {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f9fafb;
+  background: #020617;
+}
+
+@keyframes lightningPulse {
+  0% {
+    background-position: 0% 0%, 100% 0%, 50% 100%;
+    filter: brightness(1);
+  }
+  100% {
+    background-position: 10% 5%, 90% -5%, 45% 95%;
+    filter: brightness(1.08);
+  }
+}
+
+/* PAGE LAYOUT */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* MAIN CARD */
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 24px;
+  padding: 24px 22px 26px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  backdrop-filter: blur(14px);
+  text-align: center;
+}
+
+/* ADMIN CARD */
+.card-admin {
+  max-width: 520px;
+}
+
+/* BADGE */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.7);
+  margin-bottom: 14px;
+}
+
+/* GLOWING LOGO TEXT */
+.logo-glow {
+  font-size: 32px;
+  margin-bottom: 6px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #e5f3ff;
+  text-shadow:
+    0 0 6px rgba(248, 250, 252, 0.9),
+    0 0 16px rgba(56, 189, 248, 0.9),
+    0 0 30px rgba(129, 140, 248, 0.9);
+  animation: logoFlicker 2.6s infinite alternate;
+}
+
+.logo-glow-small {
+  font-size: 22px;
+  margin-bottom: 10px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #e5f3ff;
+  text-shadow:
+    0 0 4px rgba(248, 250, 252, 0.9),
+    0 0 12px rgba(56, 189, 248, 0.8),
+    0 0 20px rgba(129, 140, 248, 0.8);
+}
+
+@keyframes logoFlicker {
+  0% {
+    text-shadow:
+      0 0 3px rgba(248, 250, 252, 0.6),
+      0 0 8px rgba(56, 189, 248, 0.7),
+      0 0 18px rgba(129, 140, 248, 0.7);
+  }
+  100% {
+    text-shadow:
+      0 0 7px rgba(248, 250, 252, 1),
+      0 0 20px rgba(56, 189, 248, 1),
+      0 0 36px rgba(129, 140, 248, 1);
+  }
+}
+
+/* TEXT */
+.tagline {
+  font-size: 14px;
+  color: #cbd5f5;
+  margin-bottom: 12px;
+}
+
+.subtext {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 18px;
+}
+
+/* FORM */
+.waitlist-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.waitlist-form input[type="email"] {
+  padding: 11px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+.waitlist-form input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.5);
+}
+
+.waitlist-form button {
+  padding: 11px 12px;
+  border-radius: 999px;
+  background: linear-gradient(to right, #38bdf8, #22c55e);
+  color: #020617;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* HINT */
+.hint {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* DIVIDER */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #6b7280;
+  font-size: 11px;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #4b5563, transparent);
+}
+
+/* X BUTTON */
+.x-btn {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  background: rgba(15, 23, 42, 0.95);
+  color: #e5e7eb;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.x-btn::before {
+  content: "𝕏";
+  font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.footer span {
+  color: #e5e7eb;
+}
+
+/* ADMIN PAGE */
+.email-list {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.email-item {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  margin-bottom: 6px;
+}
