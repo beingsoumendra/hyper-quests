@@ -7,20 +7,34 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-lightning">
+  <!-- FX layers -->
+  <div class="fx-grid"></div>
+  <div class="fx-noise"></div>
+  <div class="fx-orbit fx-orbit-1"></div>
+  <div class="fx-orbit fx-orbit-2"></div>
+  <div class="fx-orbit fx-orbit-3"></div>
+
   <div class="page">
     <div class="card">
-      <div class="badge">⚡ Launching Soon</div>
+      <div class="badge">⚡ SEASON 0 • FOUNDING DROP</div>
 
       <h1 class="logo-glow">Hyper Quests</h1>
       <p class="tagline">
-        Daily crypto & web3 quests. Learn, play, and earn rewards.
+        Daily crypto & web3 quests. On-chain, on-time, always rewarding.
       </p>
 
       <p class="subtext">
-        Something big is coming. Join the early waitlist and get first access.
+        Something big is coming. Join the early access list and lock in
+        founding-member perks for our first quest seasons.
       </p>
 
-      <!-- Twitter follow (optional, not forced) -->
+      <div class="pill-row">
+        <span class="pill">Quests & streaks</span>
+        <span class="pill">Rewards & XP</span>
+        <span class="pill">Web3 native</span>
+      </div>
+
+      <!-- Twitter follow (optional, but highlighted) -->
       <a 
         href="https://x.com/hyperquests" 
         class="x-btn" 
@@ -35,18 +49,23 @@
         <input 
           type="email" 
           id="emailInput"
-          placeholder="Enter your email address" 
+          placeholder="Enter your best email" 
           required
         />
-        <button type="submit">Join the Waitlist</button>
+        <button type="submit">Join the Founders Waitlist</button>
       </form>
 
       <!-- message set by app.js (success / error) -->
       <p id="statusMsg" class="hint"></p>
 
+      <div class="eta">
+        <span class="eta-dot"></span>
+        Launching soon • Invites will roll out in waves
+      </div>
+
       <p class="footer">
-        Made by <span>Team</span>
-        • <a href="admin.html" class="admin-link">View waitlist (admin)</a>
+        Made by <span>Team</span> • Hyper Quests
+        · <a href="admin.html" class="admin-link">Admin panel</a>
       </p>
     </div>
   </div>
