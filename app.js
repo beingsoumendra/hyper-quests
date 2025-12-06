@@ -16,13 +16,15 @@ import {
    from the Firebase console.
 */
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyAVT5Opn9b0Lf9wDvuM1tCko_Zt7BHHy4w",
+    authDomain: "hyper-quests.firebaseapp.com",
+    projectId: "hyper-quests",
+    storageBucket: "hyper-quests.firebasestorage.app",
+    messagingSenderId: "252356971102",
+    appId: "1:252356971102:web:abe253b296d59f66b02cf",
+    measurementId: "G-3QN804JWBN"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
