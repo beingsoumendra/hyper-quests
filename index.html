@@ -7,34 +7,26 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-lightning">
-  <!-- FX layers -->
-  <div class="fx-grid"></div>
-  <div class="fx-noise"></div>
-  <div class="fx-orbit fx-orbit-1"></div>
-  <div class="fx-orbit fx-orbit-2"></div>
-  <div class="fx-orbit fx-orbit-3"></div>
-
   <div class="page">
     <div class="card">
-      <div class="badge">⚡ SEASON 0 • FOUNDING DROP</div>
+      <div class="badge">⚡ Launching Soon</div>
 
       <h1 class="logo-glow">Hyper Quests</h1>
       <p class="tagline">
-        Daily crypto & web3 quests. On-chain, on-time, always rewarding.
+        Daily crypto & web3 quests. Learn, play, and earn rewards.
       </p>
 
       <p class="subtext">
-        Something big is coming. Join the early access list and lock in
-        founding-member perks for our first quest seasons.
+        Something big is coming. Join the early waitlist and get first access
+        to Season 0 quests and rewards.
       </p>
 
       <div class="pill-row">
         <span class="pill">Quests & streaks</span>
-        <span class="pill">Rewards & XP</span>
+        <span class="pill">XP & rewards</span>
         <span class="pill">Web3 native</span>
       </div>
 
-      <!-- Twitter follow (optional, but highlighted) -->
       <a 
         href="https://x.com/hyperquests" 
         class="x-btn" 
@@ -44,33 +36,25 @@
         Follow @hyperquests on X
       </a>
 
-      <!-- Waitlist form (Firebase via app.js) -->
       <form id="waitlistForm" class="waitlist-form">
         <input 
           type="email" 
           id="emailInput"
-          placeholder="Enter your best email" 
+          placeholder="Enter your email address" 
           required
         />
-        <button type="submit">Join the Founders Waitlist</button>
+        <button type="submit">Join the Waitlist</button>
       </form>
 
-      <!-- message set by app.js (success / error) -->
       <p id="statusMsg" class="hint"></p>
 
-      <div class="eta">
-        <span class="eta-dot"></span>
-        Launching soon • Invites will roll out in waves
-      </div>
-
       <p class="footer">
-        Made by <span>Team</span> • Hyper Quests
-        · <a href="admin.html" class="admin-link">Admin panel</a>
+        Made by <span>Team</span> • 
+        <a href="admin.html" class="admin-link">View waitlist (admin)</a>
       </p>
     </div>
   </div>
 
-  <!-- Firebase + app logic -->
   <script type="module" src="app.js"></script>
 </body>
 </html>
