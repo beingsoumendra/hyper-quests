@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-/* BACKGROUND LIGHTS */
+/* BACKGROUND LIGHTS (animated) */
 .bg-lightning {
   min-height: 100vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
@@ -21,9 +21,9 @@
   position: fixed;
   inset: -35%;
   background:
-    radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.75), transparent 55%),
-    radial-gradient(circle at 80% 0%, rgba(236, 72, 153, 0.8), transparent 55%),
-    radial-gradient(circle at 50% 100%, rgba(34, 197, 94, 0.75), transparent 60%);
+    radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.8), transparent 55%),
+    radial-gradient(circle at 80% 0%, rgba(236, 72, 153, 0.9), transparent 55%),
+    radial-gradient(circle at 50% 100%, rgba(34, 197, 94, 0.8), transparent 60%);
   mix-blend-mode: screen;
   filter: blur(6px);
   z-index: -1;
@@ -36,8 +36,8 @@
   position: fixed;
   inset: -35%;
   background:
-    radial-gradient(circle at 80% 80%, rgba(129, 140, 248, 0.65), transparent 55%),
-    radial-gradient(circle at 20% 100%, rgba(236, 72, 153, 0.7), transparent 55%);
+    radial-gradient(circle at 80% 80%, rgba(129, 140, 248, 0.7), transparent 55%),
+    radial-gradient(circle at 20% 100%, rgba(236, 72, 153, 0.75), transparent 55%);
   mix-blend-mode: screen;
   filter: blur(10px);
   opacity: 0.7;
@@ -103,6 +103,7 @@
     0 0 30px rgba(236, 72, 153, 0.7);
   animation: flicker 2.8s infinite alternate;
 }
+
 @keyframes flicker {
   0% { opacity: 0.9; }
   50% { opacity: 1; }
@@ -117,6 +118,7 @@
   color: #cbd5f5;
   margin-bottom: 10px;
 }
+
 .subtext {
   font-size: 13px;
   color: #9ca3af;
@@ -130,6 +132,7 @@
   gap: 8px;
   margin-bottom: 16px;
 }
+
 .pill {
   font-size: 11px;
   padding: 4px 10px;
@@ -145,6 +148,7 @@
   gap: 10px;
   margin-bottom: 10px;
 }
+
 .waitlist-form input[type="email"] {
   padding: 11px 12px;
   border-radius: 999px;
@@ -152,11 +156,17 @@
   background: rgba(15,23,42,0.95);
   color: #e5e7eb;
 }
+
+.waitlist-form input::placeholder {
+  color: #6b7280;
+}
+
 .waitlist-form input:focus {
   outline: none;
   border-color: #38bdf8;
   box-shadow: 0 0 0 1px rgba(56,189,248,0.6);
 }
+
 .waitlist-form button {
   padding: 11px;
   border-radius: 999px;
@@ -166,6 +176,7 @@
   cursor: pointer;
   font-weight: 600;
 }
+
 .waitlist-form button:hover {
   filter: brightness(1.1);
 }
@@ -188,6 +199,7 @@
   margin-bottom: 14px;
   font-size: 13px;
 }
+
 .x-btn::before {
   content: "𝕏 ";
   font-size: 14px;
@@ -198,6 +210,23 @@
   font-size: 12px;
   color: #9ca3af;
 }
+
 .footer span {
   color: #e5e7eb;
+}
+
+/* MUSIC BUTTON (optional, if you add it later) */
+.music-btn {
+  margin-top: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.95);
+  color: #e5e7eb;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.music-btn:hover {
+  background: rgba(15, 23, 42, 1);
 }
